@@ -4,7 +4,12 @@ A demostration of multiple Python inheritance
 In this exmaple we call super() instead of parent class
 
 
-
+>>> s = Subclass()
+>>> s.call_me()
+Calling method on BaseClass
+Calling method on RightSubclass
+Calling method on LeftSubclass
+Calling method on Subclass
 """
 class BaseClass:
     num_base_calls = 0
