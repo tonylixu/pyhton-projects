@@ -1,0 +1,3 @@
+[submodule "python-notebook"]
+	path = python-notebook
+	url = https://github.com/tonylixu/python-notebook.git
