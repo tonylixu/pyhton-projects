@@ -10,6 +10,17 @@ Calling method on BaseClass
 Calling method on RightSubclass
 Calling method on LeftSubclass
 Calling method on Subclass
+
+First call_me of Subclass calls super().call_me(), which happens to refer 
+to LeftSubclass.call_me().
+LeftSubclass.call_me() then calls super().call_me(), but in this case,
+super() is referring to RightSubclass.call_me().
+
+Pay particular attention to this, the super call is not calling
+the method on the superclass of LeftSubclass (Which is BaseClass), it is
+calling RightSubclass, even though it is not a parent of LeftSubclass! This is
+the "next" method, not the parent method. RightSubclass then calls BaseClass, and
+the super calls have ensured each method in the calss hierarchy is executed once.
 """
 class BaseClass:
     num_base_calls = 0
