@@ -1,3 +1,6 @@
 [submodule "python-notebook"]
 	path = python-notebook
 	url = https://github.com/tonylixu/python-notebook.git
+[submodule "python-property-app"]
+	path = python-property-app
+	url = https://github.com/tonylixu/python-property-app.git
