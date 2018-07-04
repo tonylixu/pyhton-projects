@@ -8,5 +8,7 @@ As a rule of thumb, if you think you need multiple inheritance, you're probably 
 ### Mixin
 The simplest and most useful form of multiple inheritance is called a `mixin`. A `mixin` is generally a superclass that is not meant to exist on its own, but it meant to be inherited by some other class to provide extra functionality.
 
-```bash
+```python
+class EmailableContact(Contact, MailSender):
+    pass
 ```
