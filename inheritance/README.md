@@ -4,3 +4,9 @@ parent class is able to access functionality from both of them. In practice, thi
 expert programmers recommend against using it.
 
 As a rule of thumb, if you think you need multiple inheritance, you're probably wrong, but if you know you need it, you'are probably right.
+
+### Mixin
+The simplest and most useful form of multiple inheritance is called a `mixin`. A `mixin` is generally a superclass that is not meant to exist on its own, but it meant to be inherited by some other class to provide extra functionality.
+
+```bash
+```
